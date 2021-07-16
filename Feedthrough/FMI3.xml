@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fmiModelDescription fmiVersion="3.0-beta.1" modelName="Feedthrough" instantiationToken="{8c4e810f-3df3-4a00-8276-176fa3c9f004}">
+<fmiModelDescription fmiVersion="3.0-beta.1" modelName="Feedthrough" instantiationToken="{8c4e810f-3df3-4a00-8276-176fa3c9f004}"
+  variableNamingConvention="structured">
 
   <ModelExchange
     modelIdentifier="Feedthrough"
@@ -24,21 +25,21 @@
 
   <ModelVariables>
     <Float64 name="time" valueReference="0" causality="independent" variability="continuous" description="Simulation time"/>
-    <Float64 name="real_fixed_param" valueReference="1" causality="parameter" variability="fixed" start="0"/>
-    <Float64 name="real_tunable_param" valueReference="2" causality="parameter" variability="tunable" start="0"/>
-    <Float64 name="real_continuous_in" valueReference="3" description="" causality="input" start="0"/>
-    <Float64 name="real_continuous_out" valueReference="4" description="" causality="output" initial="calculated"/>
-    <Float64 name="real_discrete_in" valueReference="5" description="" causality="input" variability="discrete" start="0"/>
-    <Float64 name="real_discrete_out" valueReference="6" description="" causality="output" variability="discrete" initial="calculated"/>
-    <Int32 name="int_in" valueReference="7" description="" causality="input" variability="discrete" start="0"/>
-    <Int32 name="int_out" valueReference="8" description="" causality="output" variability="discrete" initial="calculated"/>
-    <Boolean name="bool_in" valueReference="9" description="boolean input" causality="input" variability="discrete" start="false"/>
-    <Boolean name="bool_out" valueReference="10" description="boolean output" causality="output" variability="discrete" initial="calculated"/>
-    <String name="string_param" valueReference="11" description="String parameter" causality="parameter" variability="fixed">
+    <Float64 name="real.fixed.param" valueReference="1" causality="parameter" variability="fixed" start="0"/>
+    <Float64 name="real.tunable.param" valueReference="2" causality="parameter" variability="tunable" start="0"/>
+    <Float64 name="real.continuous.in" valueReference="3" description="" causality="input" start="0"/>
+    <Float64 name="real.continuous.out" valueReference="4" description="" causality="output" initial="calculated"/>
+    <Float64 name="real.discrete.in[1,1]" valueReference="5" description="" causality="input" variability="discrete" start="0"/>
+    <Float64 name="real.discrete.out" valueReference="6" description="" causality="output" variability="discrete" initial="calculated"/>
+    <Int32 name="int.in" valueReference="7" description="" causality="input" variability="discrete" start="0"/>
+    <Int32 name="int.out" valueReference="8" description="" causality="output" variability="discrete" initial="calculated"/>
+    <Boolean name="bool[1,1].in" valueReference="9" description="boolean input" causality="input" variability="discrete" start="false"/>
+    <Boolean name="bool[1,1].out" valueReference="10" description="boolean output" causality="output" variability="discrete" initial="calculated"/>
+    <String name="string.param" valueReference="11" description="String parameter" causality="parameter" variability="fixed">
         <Start value="Set me!"/>
     </String>
-    <Binary name="binary_in" valueReference="12" description="Binary input" causality="input" start="536574206d652c20746f6f21"/>
-    <Binary name="binary_out" valueReference="13" description="Binary output" causality="output"/>
+    <Binary name="binary.in" valueReference="12" description="Binary input" causality="input" start="536574206d652c20746f6f21"/>
+    <Binary name="binary.out" valueReference="13" description="Binary output" causality="output"/>
   </ModelVariables>
 
   <ModelStructure>
